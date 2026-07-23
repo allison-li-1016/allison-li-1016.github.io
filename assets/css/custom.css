@@ -54,3 +54,25 @@ body, h1, h2, h3, h4, h5, h6, p, li, a, position, email, autocolor {
   font-size: 0.9rem;
   opacity: 0.85;
 }
+
+.publication-list {
+  margin: 1rem 0 2rem;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.publication-row {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.publication-title {
+  font-weight: bold;
+}
+
+.publication-authors {
+  margin-top: 0.2rem;
+}
+
+.publication-meta {
+  margin-top: 0.2rem;
+}

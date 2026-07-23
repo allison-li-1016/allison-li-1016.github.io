@@ -1,6 +1,11 @@
 main:
+  - title: "From Models to Impact: Making the Case for your Research"
+    outlet: "Women in Machine Learning and Data Science (WiMLDS)"
+    date: "March 2026"
+    link: https://www.youtube.com/watch?v=Roe_Q59JXO0
 
-  - title: "Placeholder Media Mention Title"
-    outlet: "Publication or Outlet Name"
-    date: "Month Year"
-    link: https://example.com
+
+  - title: "New Resources for Norovirus"
+    outlet: "Nextstrain"
+    date: "January 2026"
+    link: https://nextstrain.org/blog/2026-01-14-norovirus

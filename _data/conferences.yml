@@ -1,11 +1,31 @@
 main:
 
-  - title: "Placeholder Talk Title"
-    event: "Name of Conference/Workshop"
-    date: "Month Year"
-    link: https://example.com
+  - title: "In silico modeling forecasts iCAR inefficacy in tumors and evaluates migration constraints on selectivity"
+    event: "Synthetic Biology, Engineering, Evolution & Design (SEED)"
+    date: "June 2026"
+    presentation: https://drive.google.com/file/d/1temqqgaYJ6RLFnozzam7xxVQtk-ysSRO/view?usp=sharing
 
-  - title: "Another Placeholder Talk"
-    event: "Name of Conference/Workshop"
-    date: "Month Year"
-    link: https://example.com
+  - title: "In silico modeling guides design of combinatorial antigen recognition in engineered CAR T therapies"
+    event: "Synthetic Biology Consortium Automation Symposium"
+    date: "March 2026"
+    presentation: https://drive.google.com/file/d/1puW3It-YXnhWCu_xd8nwMKXW6z_lKGR0/view?usp=sharing
+  
+  - title: "Multiscale Modeling Informs Synthetic CAR T Circuit Design for Cell Therapy"
+    event: "UW Biology Graduate Seminar"
+    date: "March 2026"
+    presentation: https://drive.google.com/file/d/1RumMsZtOnWkqLoEMIoRl0gbDuKddV5d9/view?usp=sharing
+  
+  - title: "Modeling multi-scale in silico dynamics of combinatorial recognition circuits in T cell therapies "
+    event: "Engineering Biology Research Symposium (EBRC)"
+    date: "May 2024"
+    presentation: https://drive.google.com/file/d/1dNKn5--rhnXN1IGX0quD8mZiGCUEn3yd/view?usp=sharing
+
+  - title: "Capturing Biological Signals in Alzheimer’s Single Cell Transcriptomic Data by Isolating Salient Variations "
+    event: "Machine Learning in Computational Biology (MLCB)"
+    date: "September 2024"
+    presentation: https://drive.google.com/file/d/1BaJUiT-Er7sLV2KmOaAf3nc-lqY4ilNE/view?usp=sharing
+
+  - title: "Phylogenetic Modeling Analysis of Norovirus Reveals Varying Genotype and Gene Adaptive Mutation Rates"
+    event: "Fred Hutch SURP Conference 2022"
+    date: "August 2022"
+    presentation: https://drive.google.com/file/d/12RFWwUSkzk5MsahwHkDRYa5TpA7eZ8Sk/view?usp=sharing

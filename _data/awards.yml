@@ -1,9 +1,20 @@
 main:
-
   - year: "2026"
-    name: "Placeholder Award or Fellowship Name"
-    org: "Awarding Organization"
+    name: "Washington Space Grant Fellowship"
+    org: "WA NASA Space Grant Consortium"
 
-  - year: "2025"
-    name: "Placeholder Honor"
-    org: "Awarding Organization"
+  - year: "2023"
+    name: "Top Scholar Fellowship"
+    org: "University of Washington Department of Biology"
+
+  - year: "2022"
+    name: "Tapia Conference Scholarship"
+    org: "Paul G. Allen School of Computer Science"
+
+  - year: "2021"
+    name: "Burkhardt Family Scholarship"
+    org: "Paul G. Allen School of Computer Science"
+
+  - year: "2020"
+    name: "Phi Beta Kappa Honor Society Member"
+    org: "Phi Beta Kappa Honor Society"
