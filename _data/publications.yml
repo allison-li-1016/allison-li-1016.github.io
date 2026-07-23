@@ -1,0 +1,14 @@
+main:
+
+  - title: "Placeholder Paper Title Goes Here"
+    authors: "<strong>Your Name</strong>, Coauthor One, Coauthor Two"
+    conference: "Name of Conference or Journal, Year"
+    pdf: https://example.com/paper.pdf
+    code: https://github.com/yourname/project
+    page: https://example.com/project-page
+    bibtex: https://example.com/paper.bib
+
+  - title: "Another Placeholder Paper Title"
+    authors: "Coauthor One, <strong>Your Name</strong>"
+    conference: "Name of Conference or Journal, Year"
+    pdf: https://example.com/paper2.pdf

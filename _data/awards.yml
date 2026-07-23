@@ -1,0 +1,9 @@
+main:
+
+  - year: "2026"
+    name: "Placeholder Award or Fellowship Name"
+    org: "Awarding Organization"
+
+  - year: "2025"
+    name: "Placeholder Honor"
+    org: "Awarding Organization"

@@ -1,0 +1,56 @@
+# Basic Information
+title: "Allison W. Li"
+position: "Ph.D. Student"
+affiliation: "University of Washington"
+affiliation_link: "https://biology.washington.edu/people/allison-li"
+email: "allli (at) uw.edu"
+
+# Search Engine Optimization (SEO)
+keywords: personal website, research, portfolio
+description: "Personal academic website of Allison W. Li."
+canonical: "https://allisonwli.github.io/"
+
+# Links
+# Delete any line you don't want to show as an icon.
+google_scholar: https://scholar.google.com/citations?user=Ch5gNKAAAAAJ&hl=en
+cv_link: assets/files/cv.pdf
+github_link: https://github.com/allison-li-1016
+linkedin: https://www.linkedin.com/in/-allison-li/
+
+# Images
+avatar: ./assets/img/headshot.png
+favicon: ./assets/img/computational-biology.png
+favicon_dark: ./assets/img/computational-biology.png
+
+# Footnote
+enable_footnote: true
+
+# Auto Dark Mode
+auto_dark_mode: true
+
+# Font: "Serif" or "Sans Serif"
+font: "Serif"
+
+# Use the Minimal Light theme directly from GitHub — no local theme files needed.
+remote_theme: yaoyao-liu/minimal-light
+plugins:
+  - jekyll-remote-theme
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# The following files/folders will be excluded from the generated website.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

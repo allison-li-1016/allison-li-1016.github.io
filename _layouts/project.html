@@ -1,0 +1,21 @@
+---
+layout: homepage
+---
+
+<a href="{{ '/' | relative_url }}">&larr; Back to home</a>
+
+<h2>{{ page.title }}</h2>
+
+{% if page.image %}
+<img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="max-width: 100%;" />
+{% endif %}
+
+{% if page.links %}
+<p>
+{% for link in page.links %}
+  [<a href="{{ link.url }}">{{ link.label }}</a>]
+{% endfor %}
+</p>
+{% endif %}
+
+{{ content }}

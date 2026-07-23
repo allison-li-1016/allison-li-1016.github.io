@@ -1,0 +1,56 @@
+/* Force Helvetica everywhere, overriding the theme's serif/sans-serif font toggle. */
+body, h1, h2, h3, h4, h5, h6, p, li, a, position, email, autocolor {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Override the theme's circular avatar crop with a rectangle. */
+#header .image.avatar,
+.image.avatar {
+  border-radius: 8px;
+  width: 12em;
+}
+
+.image.avatar img {
+  border-radius: 8px;
+  width: 100%;
+  padding: 0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin: 1rem 0 2rem;
+}
+
+.project-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 8px;
+  padding: 0.75rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.project-card h4 {
+  margin: 0.25rem 0;
+}
+
+.project-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}

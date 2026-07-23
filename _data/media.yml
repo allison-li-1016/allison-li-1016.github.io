@@ -1,0 +1,6 @@
+main:
+
+  - title: "Placeholder Media Mention Title"
+    outlet: "Publication or Outlet Name"
+    date: "Month Year"
+    link: https://example.com

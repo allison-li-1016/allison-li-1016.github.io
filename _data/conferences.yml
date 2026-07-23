@@ -1,0 +1,11 @@
+main:
+
+  - title: "Placeholder Talk Title"
+    event: "Name of Conference/Workshop"
+    date: "Month Year"
+    link: https://example.com
+
+  - title: "Another Placeholder Talk"
+    event: "Name of Conference/Workshop"
+    date: "Month Year"
+    link: https://example.com
