@@ -6,9 +6,10 @@ affiliation_link: "https://biology.washington.edu/people/allison-li"
 email: "allli (at) uw.edu"
 
 # Search Engine Optimization (SEO)
-keywords: personal website, research, portfolio
-description: "Personal academic website of Allison W. Li."
+keywords: Allison Li, Allison W. Li, Allison Li UW, University of Washington, PhD student, research, portfolio
+description: "Allison W. Li is a PhD student at the University of Washington (UW). Personal academic website featuring research, publications, and projects."
 canonical: "https://allison-li-1016.github.io/"
+url: "https://allison-li-1016.github.io"
 
 # Links
 # Delete any line you don't want to show as an icon.
@@ -35,6 +36,18 @@ font: "Serif"
 remote_theme: yaoyao-liu/minimal-light
 plugins:
   - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Used by jekyll-seo-tag for structured data (helps Google identify this as a Person page)
+author:
+  name: "Allison W. Li"
+social:
+  name: "Allison W. Li"
+  links:
+    - https://scholar.google.com/citations?user=Ch5gNKAAAAAJ&hl=en
+    - https://github.com/allison-li-1016
+    - https://www.linkedin.com/in/-allison-li/
 
 # Collections
 collections:
