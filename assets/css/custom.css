@@ -1,3 +1,126 @@
+/* ===== Dark / light mode toggle ===================================== */
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.75rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1;
+  color: #043361;
+  background-color: #ffffff;
+  border: 1px solid rgba(128, 128, 128, 0.35);
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  border-color: rgba(128, 128, 128, 0.6);
+}
+
+.theme-toggle i {
+  font-size: 0.95rem;
+}
+
+/*
+ * Dark styling for the toggle, applied when the user explicitly chose dark,
+ * or when the OS is dark and no explicit choice has been made.
+ */
+html[data-theme="dark"] .theme-toggle {
+  color: #dadbdf;
+  background-color: #2b2c38;
+  border-color: rgba(200, 200, 200, 0.25);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .theme-toggle {
+    color: #dadbdf;
+    background-color: #2b2c38;
+    border-color: rgba(200, 200, 200, 0.25);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/*
+ * Mirror of the theme's dark color scheme, driven by the toggle instead of
+ * only the OS. The @media block below covers first-visit "follow OS" behavior
+ * for visitors who haven't explicitly chosen light.
+ */
+html[data-theme="dark"] body {
+  background-color: #20212b;
+  color: #dadbdf;
+}
+html[data-theme="dark"] autocolor { color: #dadbdf; }
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6,
+html[data-theme="dark"] th,
+html[data-theme="dark"] dt { color: rgb(62, 183, 240); }
+html[data-theme="dark"] a { color: rgb(62, 183, 240); }
+html[data-theme="dark"] strong,
+html[data-theme="dark"] papertitle { color: #eeeff0; }
+html[data-theme="dark"] .social-icons a { color: #3eb7f0 !important; }
+html[data-theme="dark"] lightonly { visibility: hidden; }
+html[data-theme="dark"] darkonly { visibility: visible; }
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) body {
+    background-color: #20212b;
+    color: #dadbdf;
+  }
+  html:not([data-theme="light"]) autocolor { color: #dadbdf; }
+  html:not([data-theme="light"]) h1,
+  html:not([data-theme="light"]) h2,
+  html:not([data-theme="light"]) h3,
+  html:not([data-theme="light"]) h4,
+  html:not([data-theme="light"]) h5,
+  html:not([data-theme="light"]) h6,
+  html:not([data-theme="light"]) th,
+  html:not([data-theme="light"]) dt { color: rgb(62, 183, 240); }
+  html:not([data-theme="light"]) a { color: rgb(62, 183, 240); }
+  html:not([data-theme="light"]) strong,
+  html:not([data-theme="light"]) papertitle { color: #eeeff0; }
+  html:not([data-theme="light"]) .social-icons a { color: #3eb7f0 !important; }
+  html:not([data-theme="light"]) lightonly { visibility: hidden; }
+  html:not([data-theme="light"]) darkonly { visibility: visible; }
+}
+
+/*
+ * Force light when the user explicitly chose it, even if the OS is dark.
+ * These re-assert the theme's light-mode values to override the @media rules.
+ */
+html[data-theme="light"] body {
+  background-color: #ffffff;
+  color: #333333;
+}
+html[data-theme="light"] autocolor { color: #595959; }
+html[data-theme="light"] h1,
+html[data-theme="light"] h2,
+html[data-theme="light"] h3,
+html[data-theme="light"] h4,
+html[data-theme="light"] h5,
+html[data-theme="light"] h6 { color: #043361; }
+html[data-theme="light"] th,
+html[data-theme="light"] dt { color: #444444; }
+html[data-theme="light"] a { color: #39c; }
+html[data-theme="light"] strong { color: #222222; }
+html[data-theme="light"] .social-icons a { color: #043361 !important; }
+html[data-theme="light"] lightonly { visibility: visible; }
+html[data-theme="light"] darkonly { visibility: hidden; }
+
+/* ==================================================================== */
+
 /* Force Helvetica everywhere, overriding the theme's serif/sans-serif font toggle. */
 body, h1, h2, h3, h4, h5, h6, p, li, a, position, email, autocolor {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
